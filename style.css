@@ -1,6 +1,21 @@
 /* Police perso */
 
 /* Elements principaux de la page */
+#bloc-page
+{
+    width: 900px;
+    margin: auto;
+}
+
+@media (min-width: 641px) {
+    span.icon {display:none}
+    span.text {display:inline-block}
+}
+
+@media (max-width: 640px) {
+    span.icon {display:inline-block}
+    span.text {display:none}
+}
 
 /* Headers */
 
