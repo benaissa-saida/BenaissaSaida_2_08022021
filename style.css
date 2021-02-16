@@ -1,6 +1,19 @@
 /* Police perso */
 
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.eot');
+    src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway-regular-webfont.woff') format('woff'),
+         url('raleway-regular-webfont.ttf') format('truetype'),
+         url('raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Elements principaux de la page */
+
 #bloc-page
 {
     width: 950px;
@@ -77,11 +90,62 @@ section p
     margin-block-start: Oem;
 }
 
+/* Form */
 form
 {
-    display: flex;
+    box-sizing: border-box;
+    width: 350px;
+    margin: 0;
 }
 
+form i
+{
+    padding: 10px 10px 11px 10px;
+    border: 0.1em solid #F2F2F2;
+    border-radius: 0.5em 0 0 0.5em;
+    float: left;
+    border-right: none;
+    width: 4%;
+    font-size: 0.9rem;
+    background-color: #F2F2F2;
+}
+
+form input
+{
+    padding: 10px;
+    border: 0.1em solid #F2F2F2;
+    float: left;
+    font-weight: bold;
+    width: 43%;
+
+}
+
+form button
+{
+    padding: 10px;
+    border: 0.1em solid #0065FC;
+    border-radius: 0 0.7em 0.7em 0;
+    float: left;
+    border-left: none;
+    font-weight: bold;
+    background-color: #0065FC;
+    width: 30%;
+}
+
+button span 
+{
+    color: white;
+}
+
+/* Clear form floats */
+form:after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Filters */
 #Filters 
 {
     display: flex;
@@ -89,10 +153,6 @@ form
     font-weight: bold;
 }
 
-#Filters p
-{
-    margin-top: 0.5em;
-}
 
 #Filters ul
 {
@@ -106,29 +166,33 @@ form
 {
     margin-right: 1em;
     padding: 1em 0.8em 1em 0;
-    border: 0.1em solid;
+    border: 0.1em solid #F2F2F2;
     border-radius: 2em;
 }
 
-#Filters a
+.boutton
 {
     text-decoration: none;
     color: black;
-    display: contents;
 }
 
-#Filters span
+.boutton:hover
 {
-    border: 0.1em solid;
+    color: #0065FC;
+}
+
+.boutton span
+{
+    border: 0.1em solid #F2F2F2;
     border-radius: 2em;
     padding: 1.1em;
     margin-right: 0.4em;
     background-color: #DEEBFF;
 }
 
-#Filters i 
+span i 
 {
-    color:#0065FC;
+    color: #0065FC;
 }
 /* Corps */
 
