@@ -12,6 +12,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonts/raleway-bold-webfont.eot');
+    src: url('fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-bold-webfont.woff') format('woff'),
+         url('fonts/raleway-bold-webfont.ttf') format('ttf'),
+         url('fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Elements principaux de la page */
 
 #bloc-page
@@ -29,6 +42,11 @@
     {
         width: auto;
     }
+}
+
+h1, h2, h3, #more, strong, #inscription, #Filters
+{
+    font-family: 'ralewaybold', Verdana, Arial ,sans-serif;
 }
 
 /* Loupe dans bouton recherche */
@@ -69,7 +87,6 @@ nav a
 
 nav #inscription
 {
-    font-weight: bolder;
     color: #0065FC;
 }
 
@@ -83,7 +100,6 @@ nav a:hover
 
 #principal h1 
 {
-    font-weight: bold;
     font-size: 1.3em;
     margin-block-end: -0.4em;
 }
@@ -146,15 +162,14 @@ form:after
 {
     content: "";
     clear: both;
-    display: table;
+    display: flex;
 }
 
 /* Filters */
 #Filters 
 {
     display: flex;
-    margin-top: 2em;
-    font-weight: bold;
+    margin-top: 1.5em;
 }
 
 
@@ -208,37 +223,148 @@ span i
 article
 {
     display: flex;
+    flex-direction: column;
     width: 70%;
     background-color: #F2F2F2;
+    margin-right: 20px;
+}
+article h2
+{
+    margin-left: 2.1em;
 }
 
 #hebergements
 {
     display: flex;
-    margin-right: 20px;
+    min-width: 30%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
-figure
+#hebergements figure
 {
+    flex: 1 0 11em;
+    border-radius: 1em;
+    padding: .3em;
     width: 30%;
     background-color: white;
 }
 
-figure img
+#hebergements img
 {
     width: 100%;
+    height: 6em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    object-fit: cover;
+}
+
+figcaption
+{
+    margin-left: .3em;
+}
+
+figcaption p
+{
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+#more
+{
+    font-weight: bolder;
+    margin-left: 3.1em;
 }
 
 aside
 {
     
     background-color: #F2F2F2;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
+
+aside h2
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pop
+{
+    border-radius: 1em;
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#pop figure
+{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    background-color: white;
+    padding: .3em;
+    border-radius: 1em;
+
+}
+
+#pop img
+{
+    width: 8em;
+    height: 8em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    object-fit: cover;
+}
+#pop figcaption
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#pop .star
+{
+    margin-top: 2em;
+}
+
+.star
+{
+    color: #0065FC;
+}
+
+
 
 #activite
 {
+    display: flex;   
+    flex-direction: column;
+}
+
+#act 
+{
     display: flex;
 }
+
+#act figure
+{
+    width: 40%;
+}
+
+#act img
+{
+    width: 100%;
+}
+
+.bloc-small
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* Footer */

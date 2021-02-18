@@ -13,3 +13,6 @@ modif du radius dans form
 modif du css
 remise en place du main pour englober [section, div, section], section activité ne contiendra que 4 blocs, modif du css
 ajout des <p> aux <figcaption>
+reprise de queslques points en html
+continution du CSS
+nouveaux fonts bold
