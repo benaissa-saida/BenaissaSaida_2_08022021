@@ -58,7 +58,7 @@
                                     Animaux autorisés</a></li>
                                 </ul> 
                         </div>
-                            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                            <p id="appart"><span id="ico-info"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </section>
                 
@@ -151,7 +151,9 @@
                             </figure>
 
                             <figure>
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre-d'hote"/>
+                                <a href="#" target="_blank">
+                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre-d'hote"/>
+                                </a>
                                 <figcaption>
                                     <p><strong>Au coeur de l'eau Chambres d'hôtes</strong></p>
                                     <p>Nuit à partir de <strong>71€</strong></p> 
@@ -159,6 +161,7 @@
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                     </div>
                                 </figcaption>
+                                
                             </figure>
 
                             <figure>
@@ -178,8 +181,8 @@
 
                 <section id="activite">
                     <h2>Activités à Marseille</h2>
-                    <div id="act">
-                        <figure>
+                    <div class="act">
+                        <figure id="port">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port">
                             <figcaption>
                                 <p><strong>Vieux Port</strong></p>
@@ -187,14 +190,14 @@
                         </figure>
                         <div class="bloc-small">
                             <figure>
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort-de-Pomegues">
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort-de-Pomegues" id="fort">
                                 <figcaption>
                                     <p><strong>Fort de Pomègues</strong></p>
                                 </figcaption>
                             </figure>
     
                             <figure>
-                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles-du-Frioul"/>
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles-du-Frioul" id="iles"/>
                                 <figcaption>
                                     <p><strong>Îles du Frioul</strong></p>
                                 </figcaption>
@@ -208,14 +211,14 @@
                         </figure>
                         <div class="bloc-small">
                             <figure>
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="dame"/>
                                 <figcaption>
                                     <p><strong>Notre-Dame-de-la-Garde</strong></p>
                                 </figcaption>
                             </figure>
     
                             <figure>
-                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc-Longchamp"/>
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc-Longchamp" id="parc"/>
                                 <figcaption>
                                     <p><strong>Parc Longchamp</strong></p>
                                 </figcaption>
@@ -224,26 +227,24 @@
                     </div>
                 </section>
             </main>
-
-            <footer>
-                    <div>
-                        <h3>A propos</h3>
-                        <p>Fonctionnements du site</p>
-                        <p>Conditions générales de vente</p>
-                        <p>Donnée et confidentialité</p>
-                    </div>
-                    <div>
-                        <h3>Nos hébergements</h3>
-                        <p>Charte qualité</p>
-                        <p>Soumettre votre hôtem</p>
-                    </div>
-                    <div>
-                        <h3>Assistance</h3>
-                        <p>Centre d'aide</p>
-                        <p>Nous contacter</p>
-                    </div>
-                </footer>  
-            
         </div>
+        <footer>
+            <div>
+                <h3>A propos</h3>
+                <p>Fonctionnements du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Donnée et confidentialité</p>
+            </div>
+            <div>
+                <h3>Nos hébergements</h3>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtem</p>
+            </div>
+            <div>
+                <h3>Assistance</h3>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
+        </footer>    
     </body>
 </html>
