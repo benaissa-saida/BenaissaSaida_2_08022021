@@ -31,7 +31,6 @@ body
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-size: small;
     font-family: 'ralewayregular', Verdana, Arial, sans-serif;
 }
 
@@ -39,8 +38,8 @@ body
 {
     width: 90%;
     margin: auto;
+    margin-top: 1em;
     font-family: 'ralewayregular', Verdana, Arial, sans-serif;
-    font-size: small;
 }
 
 @media all and (max-width: 640px)
@@ -54,6 +53,11 @@ body
 h1, h2, h3, #more, strong, #inscription, #Filters
 {
     font-family: 'ralewaybold', Verdana, Arial ,sans-serif;
+}
+
+p 
+{
+    font-size: 0.9em;
 }
 
 /* Loupe dans bouton recherche */
@@ -85,10 +89,9 @@ nav ul
 
 nav a
 {
-    font-size: 1em;
     color: black;
     text-decoration: none;
-    padding: 1.4em 1.9em 0 1.5em;
+    padding: 1.9em 1.3em 0 1.3em;
 
 }
 
@@ -108,55 +111,47 @@ nav a:hover
 #principal h1 
 {
     font-size: 1.3em;
-    margin-block-end: -0.4em;
-}
-
-#principal p
-{
-    font-size: 1em;
+    margin-block-end: -.4em;
 }
 
 /* Form */
 form
 {
-    box-sizing: border-box;
-    width: 350px;
+    display: flex;
     margin: 0;
 }
 
 form i
 {
     padding: 10px 10px 11px 10px;
-    border: 0.1em solid #F2F2F2;
-    border-radius: 0.7em 0 0 0.7em;
+    border: .1em solid #F2F2F2;
+    border-radius: .7em 0 0 .7em;
     float: left;
     border-right: none;
-    width: 4%;
-    font-size: 0.9rem;
+    font-size: .9rem;
     background-color: #F2F2F2;
 }
 
 form input
 {
-    padding: 10px;
-    border: 0.1em solid #F2F2F2;
+    padding: .8em 0 .8em 1.5em;
+    border: .1em solid #F2F2F2;
     float: left;
     font-weight: bold;
-    width: 43%;
+    width: 15%;
 
 }
 
 form button
 {
-    padding: 10px;
-    border: 0.1em solid #0065FC;
-    border-radius: 0 0.7em 0.7em 0;
+    padding: .8em 1.3em;
+    border: .1em solid #0065FC;
+    border-radius: 0 .7em .7em 0;
     float: left;
     cursor: pointer;
     border-left: none;
     font-weight: bold;
     background-color: #0065FC;
-    width: 30%;
 }
 
 button span 
@@ -176,8 +171,7 @@ form:after
 #Filters 
 {
     display: flex;
-    margin-top: 1.5em;
-    margin-left: .8em;
+    margin: 1.5em 0 0 .3em;
 }
 
 
@@ -187,14 +181,14 @@ form:after
     justify-content: space-between;
     list-style-type: none;
     margin-block-start: 0;
-    padding-left: 1.4em;
+    padding-left: 1.6em;
 }
 
 #Filters li 
 {
-    margin-right: 1.5em;
-    padding: .8em .8em .8em 0;
-    border: 0.1em solid #F2F2F2;
+    margin-right: 2em;
+    padding: .6em .5em .6em 0;
+    border: .1em solid #F2F2F2;
     border-radius: 2em;
 }
 
@@ -212,7 +206,7 @@ form:after
 
 .boutton span
 {
-    border: 0.1em solid #F2F2F2;
+    border: .1em solid #F2F2F2;
     border-radius: 2em;
     padding: .9em;
     margin-right: 0.3em;
@@ -228,7 +222,6 @@ span i
 {
     display: inline-flex;
     align-items: center;
-    margin-left: .8em;
     margin-bottom: 2em;
 }
 
@@ -254,32 +247,54 @@ article
     flex-direction: column;
     width: 70%;
     background-color: #F2F2F2;
-    margin-right: 20px;
+    margin-right: 3em;
     border-radius: 1.5em;
 }
 article h2
 {
-    margin-left: 2.1em;
+    margin: 2em 0 .5em 1.5em;
 }
 
 #hebergements
 {
     display: flex;
     min-width: 30%;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: baseline;
 }
 
 #hebergements figure
 {
-    flex: 1 0 11em;
+    margin: 1em 0em 1em 2.1em;
     border-radius: 1em;
     padding: .3em;
-    width: 30%;
+    width: 27%;
     background-color: white;
-    box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
+    box-shadow: 0 0 .3em rgb(0 0 0 / 20%);
 }
+
+a:focus, a:hover, a:visited 
+{
+    text-decoration: none;
+    color: black;
+}
+
+figure a:link 
+{
+    text-decoration: none;
+    color: black;
+}
+
+figure a:focus p, figure a:hover 
+{
+    color: #0065FC;
+}
+
+/*#pop figure a[href]::after {
+    content: "";
+    display: flex;
+    flex-direction: row;
+}*/
 
 #hebergements img
 {
@@ -304,7 +319,7 @@ figcaption p
 #more
 {
     font-weight: bolder;
-    margin-left: 3.1em;
+    margin: 2.5em 0 0 2.8em;
 }
 
 aside
@@ -320,7 +335,8 @@ aside
 aside h2
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 2em 0 .5em 0;
 }
 
 #pop
@@ -353,20 +369,19 @@ aside h2
 }
 #pop figcaption
 {
-    display: flex;
-    flex-direction: column;
+    width: 80%
+    margin-left: 1em;
 }
 
 #pop .star
 {
-    margin-top: 2em;
+    margin-top: 2.7em;
 }
 
 .star
 {
     color: #0065FC;
 }
-
 
 
 #activite
@@ -386,14 +401,14 @@ aside h2
 {
     display: flex;
     flex-direction: row;
-    margin-top: 0;
+    margin: 0 0 2em 0;
     align-items: stretch;
     justify-content: space-between;
 }
 
 .act p
 {
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
 .act figure
@@ -402,7 +417,7 @@ aside h2
     display: flex;
     flex-direction: column;
     border-radius: 1em;
-    box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
+    box-shadow: 0 0 .3em rgb(0 0 0 / 30%);
 }
 
 .act #port
@@ -414,15 +429,11 @@ aside h2
 {
     width: 100%;
     object-fit: cover;
-    height: 300px;
+    height: 20em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
 
-.act figure:nth-child(1)
-{
-    margin-left: 0;
-}
 
 .act figcaption
 {
@@ -456,25 +467,24 @@ aside h2
 
 #fort
 {
-    height: 140px;
+    height: 8em;
 }
 
 #iles
 {
-    height: 99px;
+    height: 7.5em;
     object-position: top;
 }
 
 #dame
 {
-    height: 120px;
+    height: 9em;
     object-position: top;
 }
 
 #parc
 {
-    height: 130px;
-    object-position: top;
+    height: 6em;
 }
 
 /* Footer */

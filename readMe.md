@@ -16,3 +16,4 @@ ajout des <p> aux <figcaption>
 reprise de queslques points en html
 continution du CSS
 nouveaux fonts bold
+site desktop terminé, html et css valide.
