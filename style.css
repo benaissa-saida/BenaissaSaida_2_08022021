@@ -42,13 +42,6 @@ body
     font-family: 'ralewayregular', Verdana, Arial, sans-serif;
 }
 
-@media all and (max-width: 640px)
-{
-    #bloc-page
-    {
-        width: auto;
-    }
-}
 
 h1, h2, h3, #more, strong, #inscription, #Filters
 {
@@ -95,7 +88,7 @@ nav a
 
 }
 
-nav #inscription
+#inscription a
 {
     color: #0065FC;
 }
@@ -111,7 +104,7 @@ nav a:hover
 #principal h1 
 {
     font-size: 1.3em;
-    margin-block-end: -.4em;
+    margin-bottom: -.4em;
 }
 
 /* Form */
@@ -124,7 +117,7 @@ form
 form i
 {
     padding: 10px 10px 11px 10px;
-    border: .1em solid #F2F2F2;
+    border: .1em solid grey;
     border-radius: .7em 0 0 .7em;
     float: left;
     border-right: none;
@@ -151,7 +144,7 @@ form button
     cursor: pointer;
     border-left: none;
     font-weight: bold;
-    background-color: #0065FC;
+    background-color: #0464f3;
 }
 
 button span 
@@ -180,7 +173,7 @@ form:after
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-block-start: 0;
+    margin-top: 0;
     padding-left: 1.6em;
 }
 
@@ -258,7 +251,6 @@ article h2
 #hebergements
 {
     display: flex;
-    min-width: 30%;
     flex-wrap: wrap;
     align-items: baseline;
 }
@@ -290,11 +282,6 @@ figure a:focus p, figure a:hover
     color: #0065FC;
 }
 
-/*#pop figure a[href]::after {
-    content: "";
-    display: flex;
-    flex-direction: row;
-}*/
 
 #hebergements img
 {
@@ -369,7 +356,7 @@ aside h2
 }
 #pop figcaption
 {
-    width: 80%
+    width: 80%;
     margin-left: 1em;
 }
 
@@ -499,4 +486,313 @@ footer
 footer div 
 {
     width: 33%;
+}
+
+
+/* Mediaqueries */
+@media screen and (max-width: 375px)
+{ /* Pour mobile */
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    body
+    {
+        margin: 0;
+    }
+
+    #bloc-page
+    {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    header 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo
+    {
+        margin: 1.5em 0 0 1em;
+    }
+
+    nav 
+    {
+        
+        width: 100%;
+        
+        
+    }
+
+    nav ul
+    {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-bottom: 0.2em solid #F2F2F2;
+        padding-bottom: 1em;
+    }
+
+    nav li
+    {
+        z-index: 2;
+    }
+
+    #inscription
+    {
+        position: absolute;
+        bottom: 4em;
+        right: 1em;
+        z-index: 1;
+
+    }
+
+    nav a
+    {
+        border-bottom: 0.2em solid #F2F2F2;
+    }
+
+    a[href="#activites"]
+    {
+        padding: 0 4em 1em 4em;
+    }
+
+    a[href="#hebergements"]
+    {
+        padding: 0 2em 1em 2.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0.2em solid #0065FC;
+        border-top: none;
+        
+    }        
+    
+    #inscription a
+    {
+        border: none;
+        padding: 0;
+    }
+
+    #bloc-hebergements
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article, aside, section, .act, #Filters
+    {
+        width: 100%;
+        display: block;
+    }
+
+    #principal
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.6em 0 1.6em;
+        flex-wrap: wrap;
+    }
+
+    #Filters
+    {
+        margin: 1.5em 0 0 0;
+    }
+
+    #Filters ul
+    {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+        width: 100%;
+        align-items: self-start;
+        position: relative;
+        z-index: 2;
+        
+    }
+
+    #child
+
+    {
+         align-self: flex-end;
+         position: absolute;
+         z-index: 1;
+    }
+
+    #Filters li
+    {
+        margin: 0 0 1em 0;
+        padding: .9em 0.3em .9em 0;
+    }
+
+    #appart
+    {
+        margin: 0 0 2em 2em; 
+        position: relative;
+    }
+
+    #ico-info
+    {
+        align-self: flex-start;
+        position: absolute;
+        bottom: 1.1em;
+        left: -2.7em;
+        padding: .3em .7em; 
+
+    }
+
+    footer
+    {
+        display: block;
+    }
+
+}
+
+
+
+@media (min-width: 376px) and (max-width: 768px)
+{   /* Pour tablettes et Ipads */
+
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+
+    
+    body
+    {
+        margin: 0;
+    }
+
+    #bloc-page
+    {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    header 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo
+    {
+
+    }
+
+    nav 
+    {
+    
+    }
+
+    nav ul
+    {
+        padding: 0;
+
+    }
+
+    nav li
+    {
+         border-bottom: 0.2em solid #F2F2F2;
+    }
+
+    nav a
+    {
+        border-bottom: 0.2em solid #F2F2F2;
+        padding: 0 3.1em 0 3.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0.2em solid #0065FC;
+        border-top: none;
+        
+    }        
+    
+    nav #inscription
+    {
+
+    }
+
+   #bloc-hebergements
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article, aside, section, .act, #Filters
+    {
+        width: 100%;
+        display: block;
+    }
+
+    #principal
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.6em 0 1.6em;
+        flex-wrap: wrap;
+    }
+
+    #Filters
+    {
+        margin: 1.5em 0 0 0;
+        display: flex;
+    }
+
+    #Filters ul
+    {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 2em;
+
+    }
+
+
+
+    #Filters li
+    {
+        margin: 0 0 1em 0;
+        padding: .9em 0.3em .9em 0;
+    }
+
+    #appart
+    {
+        margin: 0 0 2em 2em; 
+        position: relative;
+    }
+
+    #ico-info
+    {
+        align-self: flex-start;
+        position: absolute;
+        bottom: .3em;
+        left: -2.7em;
+        padding: .3em .7em; 
+
+    }
+
+    footer
+    {
+        display: block;
+    }
+
 }
