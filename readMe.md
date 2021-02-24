@@ -18,3 +18,4 @@ continution du CSS
 nouveaux fonts bold
 site desktop terminé, html et css valide.
 Début du responsive
+Reprise du code, et du css

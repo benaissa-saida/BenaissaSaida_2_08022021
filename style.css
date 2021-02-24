@@ -104,7 +104,7 @@ nav a:hover
 #principal h1 
 {
     font-size: 1.3em;
-    margin-bottom: -.4em;
+    margin-bottom: -0.4em;
 }
 
 /* Form */
@@ -114,22 +114,21 @@ form
     margin: 0;
 }
 
-form i
+.map i
 {
-    padding: 10px 10px 11px 10px;
-    border: .1em solid grey;
-    border-radius: .7em 0 0 .7em;
-    float: left;
-    border-right: none;
-    font-size: .9rem;
+    padding: 12px 10px 12px 10px;
+    border: .1em solid transparent;
     background-color: #F2F2F2;
+    border-radius: 0.7em 0 0 0.7em;
+    border-right: none;
+    font-size: 0.9rem;
+    color: black;
 }
 
 form input
 {
-    padding: .8em 0 .8em 1.5em;
-    border: .1em solid #F2F2F2;
-    float: left;
+    padding: 0.8em 0 0.8em 1.5em;
+    border: 0.1em solid #F2F2F2;
     font-weight: bold;
     width: 15%;
 
@@ -137,14 +136,13 @@ form input
 
 form button
 {
-    padding: .8em 1.3em;
-    border: .1em solid #0065FC;
-    border-radius: 0 .7em .7em 0;
-    float: left;
+    padding: 0.8em 1.3em 0.9em 1.3em;
+    border: 0.1em solid transparent;
+    border-radius: 0 0.7em 0.7em 0;
     cursor: pointer;
     border-left: none;
     font-weight: bold;
-    background-color: #0464f3;
+    background-color: #0065FC;
 }
 
 button span 
@@ -152,19 +150,11 @@ button span
     color: white;
 }
 
-/* Clear form floats */
-form:after
-{
-    content: "";
-    clear: both;
-    display: flex;
-}
-
 /* Filters */
 #Filters 
 {
     display: flex;
-    margin: 1.5em 0 0 .3em;
+    margin: 1.5em 0 0 0.3em;
 }
 
 
@@ -180,8 +170,8 @@ form:after
 #Filters li 
 {
     margin-right: 2em;
-    padding: .6em .5em .6em 0;
-    border: .1em solid #F2F2F2;
+    padding: 0.6em 0.5em 0.6em 0;
+    border: 0.1em solid #F2F2F2;
     border-radius: 2em;
 }
 
@@ -189,7 +179,7 @@ form:after
 {
     text-decoration: none;
     color: black;
-    padding-right: .7em;
+    padding-right: 0.7em;
 }
 
 .boutton:hover
@@ -199,9 +189,9 @@ form:after
 
 .boutton span
 {
-    border: .1em solid #F2F2F2;
+    border: 0.1em solid #F2F2F2;
     border-radius: 2em;
-    padding: .9em;
+    padding: 0.9em;
     margin-right: 0.3em;
     background-color: #DEEBFF;
 }
@@ -220,11 +210,11 @@ span i
 
 #ico-info
 {
-    border: .1em solid #F2F2F2;
-    padding: .2em .6em;
+    border: 0.1em solid #F2F2F2;
+    padding: 0.2em 0.6em;
     border-radius: 2em;
-    font-size: .8em;
-    margin-right: .9em;
+    font-size: 0.8em;
+    margin-right: 0.9em;
 }
 /* Corps */
 
@@ -245,7 +235,7 @@ article
 }
 article h2
 {
-    margin: 2em 0 .5em 1.5em;
+    margin: 2em 0 0.5em 1.5em;
 }
 
 #hebergements
@@ -257,29 +247,25 @@ article h2
 
 #hebergements figure
 {
-    margin: 1em 0em 1em 2.1em;
+    margin: 1em 0 1em 2.1em;
     border-radius: 1em;
-    padding: .3em;
-    width: 27%;
+    padding: 0.3em;
+    width: 230px;
     background-color: white;
-    box-shadow: 0 0 .3em rgb(0 0 0 / 20%);
+    box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
 }
 
-a:focus, a:hover, a:visited 
+a:link, a:visited figure
 {
     text-decoration: none;
     color: black;
 }
 
-figure a:link 
-{
-    text-decoration: none;
-    color: black;
-}
 
-figure a:focus p, figure a:hover 
+a:focus figure, a:hover figure
 {
     color: #0065FC;
+    text-decoration: none;
 }
 
 
@@ -294,13 +280,13 @@ figure a:focus p, figure a:hover
 
 figcaption
 {
-    margin-left: .3em;
+    margin-left: 0.3em;
 }
 
 figcaption p
 {
-    margin-top: .3em;
-    margin-bottom: .3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 #more
@@ -323,13 +309,13 @@ aside h2
 {
     display: flex;
     justify-content: space-around;
-    margin: 2em 0 .5em 0;
+    margin: 2em 0 0.5em 0;
 }
 
 #pop
 {
     border-radius: 1em;
-    padding: .3em;
+    padding: 0.3em;
     display: flex;
     flex-direction: column;
 }
@@ -337,11 +323,10 @@ aside h2
 #pop figure
 {
     display: flex;
-    width: 80%;
-    align-self: center;
+    width: 290px;
     background-color: white;
     box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
-    padding: .3em;
+    padding: 0.3em;
     border-radius: 1em;
 
 }
@@ -354,6 +339,12 @@ aside h2
     border-bottom-left-radius: 1em;
     object-fit: cover;
 }
+
+#blue img
+{
+    width: 13em;
+}
+
 #pop figcaption
 {
     width: 80%;
@@ -371,40 +362,37 @@ aside h2
 }
 
 
-#activite
+#activites
 {
     display: flex;   
     flex-direction: column;
     margin-bottom: 2em;
 }
-#activite h2
+#activites h2
 {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
-
-
 
 .act 
 {
     display: flex;
     flex-direction: row;
     margin: 0 0 2em 0;
-    align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .act p
 {
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 .act figure
 {
-    width: 23%;
+    width: 265px;
     display: flex;
     flex-direction: column;
     border-radius: 1em;
-    box-shadow: 0 0 .3em rgb(0 0 0 / 30%);
+    box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
 }
 
 .act #port
@@ -424,22 +412,21 @@ aside h2
 
 .act figcaption
 {
-    margin: .7em;
+    margin: 0.7em;
 }
 
 .bloc-small
 {
-    width: 25%;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .bloc-small figure
 {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
     border-radius: 1em;
     box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
 }
@@ -454,7 +441,7 @@ aside h2
 
 #fort
 {
-    height: 8em;
+    height: 7.5em;
 }
 
 #iles
@@ -524,10 +511,7 @@ footer div
 
     nav 
     {
-        
         width: 100%;
-        
-        
     }
 
     nav ul
@@ -603,6 +587,60 @@ footer div
         flex-wrap: wrap;
     }
 
+    form
+    {
+        display: flex;
+        margin: 0;
+    }
+
+    span.map
+    {
+        padding: 0.5em 1em 0.5em 0.5em;
+        border: .1em solid transparent;
+        border-radius: 0.7em 0 0 0.7em;
+        border-right: none;
+        background-color: #F2F2F2;
+    }
+
+    .map i
+    {
+        padding: 0;
+        padding-left: 0.5em ;
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    form input
+    {
+        padding: 0.8em 0 0.8em 1.5em;
+        border: 0.1em solid #F2F2F2;
+        float: left;
+        font-weight: bold;
+        width: 70%;
+        position: relative;
+
+    }
+
+    form button
+    {
+        padding: 0.8em 1em;
+        border: 0.1em solid transparent;
+        border-radius: 0.7em;
+        cursor: pointer;
+        border-left: none;
+        font-weight: bold;
+        background-color: #0065FC;
+        position: absolute;
+        right: 3.8em;
+    }
+
+    .icon i
+    {
+        color: white;
+        background-color: #0065FC;
+    }
+
+
     #Filters
     {
         margin: 1.5em 0 0 0;
@@ -631,7 +669,7 @@ footer div
     #Filters li
     {
         margin: 0 0 1em 0;
-        padding: .9em 0.3em .9em 0;
+        padding: 0.9em 0.3em 0.9em 0;
     }
 
     #appart
@@ -646,8 +684,201 @@ footer div
         position: absolute;
         bottom: 1.1em;
         left: -2.7em;
-        padding: .3em .7em; 
+        padding: 0.3em 0.7em; 
 
+    }
+
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+    }
+    article h2
+    {
+        margin: 2em 0 0.5em 1.5em;
+        font-size: 1.4em;
+    }
+
+    #hebergements
+    {
+        display: block;
+    }
+
+    #hebergements figure
+    {
+        margin: 1em 1.9em 1em 1.9em;
+        border-radius: 1em;
+        padding: .3em;
+        width: 85%;
+        background-color: white;
+        box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
+    }
+
+    #hebergements img
+    {
+        width: 100%;
+        height: 6em;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        object-fit: cover;
+    }
+
+    #more
+    {
+        font-size: 1.1em;
+        margin: 1em 0 0 2.3em;
+    }
+
+    aside
+    {
+        
+        background-color: #F2F2F2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0%;
+        order: -1;
+    }
+
+    aside h2
+    {
+        display: flex;
+        font-size: 1.4em;
+        justify-content: space-around;
+        margin: 2em 0 0.5em 0;
+    }
+
+    #pop
+    {
+        padding: 0.3em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pop figure
+    {
+        display: flex;
+        width: 85%;
+        align-self: center;
+        background-color: white;
+        box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
+        padding: 0.3em;
+        border-radius: 1em;
+
+    }
+
+    #pop img
+    {
+        width: 8em;
+        height: 8em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+    }
+
+    #pop .star
+    {
+        font-size: 0.8rem;
+        margin-top: 4em;
+    }
+
+
+    #activites h2
+    {
+        margin-bottom: 0.5em;
+    }
+
+    #activites
+    {
+        justify-content: center;
+    }
+
+    .act
+    {
+        justify-self: start;
+    }
+
+    .act p
+    {
+        font-size: 0.8em;
+    }
+
+    .act figure
+    {
+        width: 85%;
+        border-radius: 1em;
+        margin: 0.8em 1.9em 0.8em 1.9em;
+        box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
+    }
+
+    .act #port
+    {
+        margin: 0.8em 0 0.8em 1.5em;
+    }
+
+    .act img
+    {
+        width: 100%;
+        object-fit: cover;
+        height: 10em;
+        object-position: top;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+
+    .act figcaption
+    {
+        margin: 0.7em;
+    }
+
+    .bloc-small
+    {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-small figure
+    {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
+    }
+
+    .bloc-small img
+    {
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    #fort
+    {
+        height: 8em;
+    }
+
+    #iles
+    {
+        height: 7.5em;
+        object-position: top;
+    }
+
+    #dame
+    {
+        height: 9em;
+        object-position: top;
+    }
+
+    #parc
+    {
+        height: 6em;
     }
 
     footer
@@ -696,37 +927,52 @@ footer div
 
     nav 
     {
-    
+        width: 100%;
+        border-bottom: 0.2em solid #F2F2F2;
     }
 
     nav ul
     {
         padding: 0;
-
+        justify-content: center;
+        width: 100%;
     }
 
     nav li
     {
-         border-bottom: 0.2em solid #F2F2F2;
+        display: inline-block;
+        width: 33.3%;
+        text-align: center;
     }
 
     nav a
     {
-        border-bottom: 0.2em solid #F2F2F2;
-        padding: 0 3.1em 0 3.1em;
+       /*border-bottom: 0.2em solid #F2F2F2;*/
+        padding: 0 ;
     }
 
     nav a:hover
     {
         border-bottom: 0.2em solid #0065FC;
         border-top: none;
-        
     }        
     
-    nav #inscription
+    a[href="#activites"]
     {
-
+        padding: 0 6em 1em 5.5em;
     }
+
+    a[href="#hebergements"]
+    {
+        padding: 0 4em 1em 4em;
+    }
+
+    #inscription a:hover
+    {
+        padding: 0 5em 1em 4.5em;
+    }
+
+    
 
    #bloc-hebergements
     {
@@ -748,6 +994,62 @@ footer div
         padding: 0 1.6em 0 1.6em;
         flex-wrap: wrap;
     }
+
+    form
+    {
+        display: flex;
+        margin: 0;
+    }
+
+    .map i
+    {
+        padding: 0.5em ;
+        border: 0.1em solid transparent;
+        background-color: #F2F2F2;
+        border-radius: 0.7em 0 0 0.7em;
+        float: left;
+        border-right: none;
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    form input
+    {
+        padding: 0.8em 0 0.8em 1.5em;
+        border: .1em solid #F2F2F2;
+        float: left;
+        font-weight: bold;
+        width: 15%;
+
+    }
+
+    form button
+    {
+        padding: 0.8em 1.3em;
+        border: 0.1em solid transparent;
+        border-radius: 0 0.7em 0.7em 0;
+        float: left;
+        cursor: pointer;
+        border-left: none;
+        font-weight: bold;
+        background-color: #0065FC;
+    }
+
+    .icon i
+    {
+        color: white;
+        background-color: #0065FC;
+    }
+
+    /* Clear form floats */
+    form:after
+    {
+        content: "";
+        clear: both;
+        display: flex;
+    }
+
+
 
     #Filters
     {
@@ -771,7 +1073,7 @@ footer div
     #Filters li
     {
         margin: 0 0 1em 0;
-        padding: .9em 0.3em .9em 0;
+        padding: 0.9em 0.3em 0.9em 0;
     }
 
     #appart
@@ -784,9 +1086,9 @@ footer div
     {
         align-self: flex-start;
         position: absolute;
-        bottom: .3em;
+        bottom: 0.3em;
         left: -2.7em;
-        padding: .3em .7em; 
+        padding: 0.3em 0.7em; 
 
     }
 
@@ -795,4 +1097,9 @@ footer div
         display: block;
     }
 
+}
+
+@media (min-width: 641px) and (max-width: 1124px)
+{
+    
 }
