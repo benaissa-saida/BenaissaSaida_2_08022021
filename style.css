@@ -774,8 +774,8 @@ footer div
 
     .bloc-small figure
     {
-        margin-block-end: 10px;
-        margin-block-start: 10px;
+        margin: 10px 0;
+
     }
 
     #fort, #parc
