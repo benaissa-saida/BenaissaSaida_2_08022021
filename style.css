@@ -118,12 +118,11 @@ form input
     border: 0.1em solid #F2F2F2;
     font-weight: bold;
     width: 210px;
-
 }
 
 form button
 {
-    padding: 0.8em 1.3em 0.9em 1.3em;
+    padding: 12px;
     border: 0.1em solid transparent;
     border-radius: 0 0.7em 0.7em 0;
     cursor: pointer;
@@ -131,7 +130,6 @@ form button
     font-weight: bold;
     background-color: #0065FC;
 }
-
 button span 
 {
     color: white;
@@ -480,6 +478,11 @@ footer div
         right: 20px;
     }
 
+    #inscription a
+    {
+        padding: 0;
+    }
+
     #ico-info
     {
         margin-bottom: 1.5em;
@@ -525,11 +528,6 @@ footer div
         border-bottom: 0.2em solid #F2F2F2;
         padding-bottom: 1em;
     }
-        
-    #inscription a
-    {
-        padding: 0;
-    }
 
     nav a
     {
@@ -544,6 +542,11 @@ footer div
     a[href="#hebergements"]
     {
         padding: 0 3.1em 1em 2.1em;
+    }
+
+    #inscription a:hover
+    {
+        border-bottom: none;
     }
 
     nav a:hover
@@ -601,8 +604,8 @@ footer div
 
     form button
     {
-        padding: 1.1em 1.1em;
-        border-radius: 0.7em;
+        padding: 14.3px;
+        border-radius: 1.4em;
         margin-left: -1em;
 
     }
