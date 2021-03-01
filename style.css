@@ -32,13 +32,11 @@ body
     min-width: 370px;
     display: flex;
     flex-direction: column;
-    font-family: 'ralewayregular', Verdana, Arial, sans-serif;
 }
 
 #bloc-page
 {
     width: 90%;
-    min-width: 370px;
     margin: auto;
     margin-top: 1em;
     font-family: 'ralewayregular', Verdana, Arial, sans-serif;
@@ -119,7 +117,7 @@ form input
     padding: 0.8em 0 0.8em 1.5em;
     border: 0.1em solid #F2F2F2;
     font-weight: bold;
-    width: 15%;
+    width: 210px;
 
 }
 
@@ -143,6 +141,7 @@ button span
 #Filters 
 {
     display: flex;
+    flex-wrap: wrap;
     margin: 1.5em 0 0 0.3em;
 }
 
@@ -219,7 +218,7 @@ article
     flex-direction: column;
     width: 70%;
     background-color: #F2F2F2;
-    margin-right: 3em;
+    margin-right: 2em;
     border-radius: 1.5em;
 }
 article h2
@@ -231,7 +230,6 @@ article h2
 {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 #hebergements figure
@@ -280,8 +278,7 @@ figcaption p
 
 #more
 {
-    font-weight: bolder;
-    margin: 2.5em 0 0 2.8em;
+    margin: 2.5em 0 1em 2.8em;
 }
 
 aside
@@ -289,6 +286,7 @@ aside
     
     background-color: #F2F2F2;
     width: 30%;
+    min-width: 310px;
     display: flex;
     flex-direction: column;
     border-radius: 1.5em;
@@ -307,6 +305,7 @@ aside h2
     padding: 0.3em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #pop figure
@@ -365,8 +364,6 @@ aside h2
 .act 
 {
     display: flex;
-    flex-direction: row;
-    margin: 0 0 2em 0;
     justify-content: space-around;
 }
 
@@ -457,6 +454,7 @@ footer
     display: flex;
     background-color: #F2F2F2;
     padding-left: 4em;
+    font-family: 'ralewayregular', Verdana, Arial, sans-serif;
 }
 
 footer div 
@@ -465,52 +463,20 @@ footer div
 }
 
 
-@media (min-width: 794px) 
-{    /*loupe*/
-    span.icon {display:none}
-    span.text {display:inline-block}
-}
+
 
 /*Mediaqueries*/
 @media screen and (max-width: 448px)
 {
-    *
-    {
-        box-sizing: border-box;
-    }
 
     #bloc-page
     {
-        margin: 0;
-        width: 100%;
         min-width: 370px;
-        margin-top: 0;
-    }
-
-    header 
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo
-    {
-        margin: 1.5em 0 0 15px;
-    }
-
-    nav 
-    {
-        width: 100%;
     }
 
     nav ul
     {
-        padding: 0;
-        display: flex;
         position: relative;
-        border-bottom: none;
-        padding-bottom: 1em;
     }
 
     #inscription
@@ -521,57 +487,114 @@ footer div
 
     }
 
+    #principal
+    {
+        min-width: 350px;
+
+    }
+
+    .map i
+    {
+        text-align: center;
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    #ico-info
+    {
+        margin-bottom: 1.5em;
+    }
+
+    #hebergements
+    {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 785px)
+{
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    #bloc-page
+    {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    header 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo
+    {
+        margin: 1.5em 0 0 1em;
+    }
+
+    nav 
+    {
+        width: 100%;
+    }
+
+    nav ul
+    {
+        padding: 0;
+        justify-content: space-around;
+        border-bottom: 0.2em solid #F2F2F2;
+        padding-bottom: 1em;
+    }
+        
+    #inscription a
+    {
+        padding: 0;
+    }
+
     nav a
     {
-        border-bottom: 0.2em solid #F2F2F2;
+        border-bottom: none;
     }
 
     a[href="#activites"]
     {
-        padding: 0 4em 1em 4em;
+        padding: 0 3.6em 1em 3.5em;
     }
 
     a[href="#hebergements"]
     {
-        padding: 0 2em 1em 2.1em;
+        padding: 0 3.1em 1em 2.1em;
     }
 
     nav a:hover
     {
         border-bottom: 0.2em solid #0065FC;
         border-top: none;
-        
+            
     }        
-    
-    #inscription a
-    {
-        border: none;
-        padding: 0;
-    }
 
-    #bloc-hebergements
+    article, aside, section, #activites, .act, footer
     {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    article, aside, section, .act, footer
-    {
-        min-width: 370px;
+        min-width: 340px;
         display: block;
     }
 
     #principal
     {
-        display: block;
         padding: 0 1.6em 0 1.6em;
-        min-width: 350px;
+        flex-wrap: wrap;
+    }    
 
+    form
+    {
+        margin: 2em 0;
     }
-
     
-
     span.map
     {
         padding: 0.5em 1em 0.5em 0.5em;
@@ -581,39 +604,41 @@ footer div
         background-color: #F2F2F2;
     }
 
-    form
-    {
-        margin: 2em 0;
-    }
-
     .map i
     {
-        padding: 0;
-        padding-top: 0.4em ;
-        text-align: center;
-        font-size: 0.9rem;
-        color: black;
+        padding: 0.4em 0 0 0.4em;
     }
 
     form input
     {
-        width: 260px;
+        width: 250px;
         padding: 1em 0 1em 1.2em;
         font-size: 0.9rem;
+        border-right: none;
 
     }
 
+    /*loupe*/
+    span.icon {display:inline-block}
+    span.text {display:none}
+
     form button
     {
-        padding: 1.1em 1.3em;
+        padding: 1.1em 1.1em;
         border-radius: 0.7em;
 
+    }
+
+    .icon i
+    {
+        color: white;
+        font-size: 1rem;
+        background-color: #0065FC;
     }
 
     #Filters
     {
         margin: 1.5em 0 0 0;
-        display: flex;
         flex-direction: column;
         min-width: 30px;
     }
@@ -627,32 +652,28 @@ footer div
         
     }
 
-    .icon i
-    {
-        color: white;
-        font-size: 1rem;
-        background-color: #0065FC;
-    }
-
     #Filters li
     {
         margin: 0 0 1em 0;
         padding: 0.9em 0.3em 0.9em 0;
     }
 
+
+    #bloc-hebergements
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
     article
     {
         background-color: transparent;
     }
+    
     article h2
     {
         font-size: 1.4em;
         margin: 2em 1em 0.5em;
-    }
-
-    #hebergements
-    {
-        display: block;
     }
 
     #hebergements figure
@@ -688,6 +709,9 @@ footer div
     #pop
     {
         margin-bottom: 1em;
+        align-items: unset;
+        flex-wrap: wrap;
+        flex-direction: unset;
     }
 
     #pop figure
@@ -696,15 +720,10 @@ footer div
         margin: 18px;
     }
 
-    #pop img
+    #pop img 
     {
         width: 115px;
         height: 120px;
-    }
-
-    #blue img
-    {
-        width: 115px;
     }
 
     #pop figcaption
@@ -716,13 +735,21 @@ footer div
     #pop .star
     {
         margin-top: 3.3em;
-        font-size: 0.7rem;
     }
+
 
     #activites h2
     {
         font-size: 1.4em;
         margin: 2em 1em 0.5em;
+    }
+
+    .act 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-start;
     }
 
 
@@ -734,24 +761,21 @@ footer div
 
     .act img
     {
-        width: 100%;
-        object-fit: cover;
         height: 9em;
         object-position: top;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
+    }
+
+    .bloc-small
+    {
+        width: 340px;
+        margin: 0 13px 0;
+        align-items: center;
     }
 
     .bloc-small figure
     {
         margin-block-end: 10px;
         margin-block-start: 10px;
-    }
-
-    #iles, #dame
-    {
-        height: 9em;
-        object-position: top;
     }
 
     #fort, #parc
@@ -775,392 +799,23 @@ footer div
         width: 70%;
         margin:  2em 22px;
     }
-    
-}
-
-@media (max-width: 793px)
-{
-    *
-    {
-        box-sizing: border-box;
-    }
-
-    #bloc-page
-    {
-        display: block;
-        width: 100%;
-        min-width: 370px;
-        margin: 0;
-    }
-
-    header 
-    {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo
-    {
-        margin: 1.5em 0 0 1em;
-    }
-
-    nav 
-    {
-        width: 100%;
-    }
-
-    nav ul
-    {
-        padding: 0;
-        justify-content: space-evenly;
-        border-bottom: 0.2em solid #F2F2F2;
-        padding-bottom: 1em;
-    }
-        
-    #inscription a
-    {
-        border: none;
-        padding: 0;
-    }
-
-    nav a
-    {
-        border-bottom: none;
-    }
-
-    a[href="#activites"]
-    {
-        padding: 0 3.6em 1em 3.5em;
-    }
-
-    a[href="#hebergements"]
-    {
-        padding: 0 3.1em 1em 2.1em;
-    }
-
-    nav a:hover
-    {
-        border-bottom: 0.2em solid #0065FC;
-        border-top: none;
-            
-    }        
-
-    #bloc-hebergements
-    {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    article, aside, section, #activites, .act, footer
-    {
-        width: 100%;
-        min-width: 340px;
-        display: block;
-    }
-
-    #principal
-    {
-        padding: 0 1.6em 0 1.6em;
-        flex-wrap: wrap;
-    }    
-
-    span.map
-    {
-        padding: 0.5em 1em 0.5em 0.5em;
-        border: .1em solid transparent;
-        border-radius: 0.7em 0 0 0.7em;
-        border-right: none;
-        background-color: #F2F2F2;
-    }
-
-    form
-    {
-        margin: 2em 0;
-    }
-
-    .map i
-    {
-        padding: 0;
-        padding-top: 0.4em ;
-        text-align: center;
-        font-size: 0.9rem;
-        color: black;
-    }
-
-    form input
-    {
-        width: 260px;
-        padding: 1em 0 1em 1.2em;
-        font-size: 0.9rem;
-
-    }
-
-    /*loupe*/
-    span.icon {display:inline-block}
-    span.text {display:none}
-
-    form button
-    {
-        padding: 1.1em 1.1em;
-        border-radius: 0.7em;
-
-    }
-
-    #Filters
-    {
-        margin: 1.5em 0 0 0;
-        display: flex;
-        flex-direction: column;
-        min-width: 30px;
-    }
-
-    #Filters ul
-    {
-        flex-wrap: wrap;
-        padding: 0;
-        width: 100%;
-        align-items: self-start;
-        
-    }
-
-    .icon i
-    {
-        color: white;
-        font-size: 1rem;
-        background-color: #0065FC;
-    }
-
-    #Filters li
-    {
-        margin: 0 0 1em 0;
-        padding: 0.9em 0.3em 0.9em 0;
-    }
-
-
-    /*@media (min-width: 370px) and (max-width: 450px)
-    { 
-        /*Pour mobile
-
-        nav ul
-        {
-            position: relative;
-            justify-content: space-between;
-        }
-
-        #inscription
-        {
-            position: absolute;
-            bottom: 4em;
-            right: 25px;
-
-        }
-
-        form button
-        {
-            padding: 1.1em 1.1em;
-            border-radius: 0.7em;
-        }
-         
-
-        #appart
-        {
-            margin: 0 0 2em 2em; 
-            position: relative;
-        }
-
-        #ico-info
-        {
-            align-self: flex-start;
-            position: absolute;
-            bottom: 1.1em;
-            left: -2.7em;
-
-        } 
-
-        #pop figure
-        {
-            width: 330px;
-            margin: 18px;
-        }
-        #pop img
-        {
-            width: 115px;
-            height: 120px;
-        }
-
-        #blue img
-        {
-            width: 115px;
-        }
-
-        #pop figcaption
-        {
-            width: 50%;
-            margin-left: 20px;
-        }
-
-        #pop .star
-        {
-            margin-top: 3.3em;
-            font-size: 0.7rem;
-        }
-
-
-    }*/
-
-
-    article
-        {
-            background-color: transparent;
-        }
-        article h2
-        {
-            font-size: 1.4em;
-            margin: 2em 1em 0.5em;
-        }
-
-        #hebergements
-        {
-            display: block;
-        }
-
-        #hebergements figure
-        {
-            margin: 18px;
-            width: 330px;
-        }
-
-        .star
-        {
-            font-size: 0.7rem;
-        }
-
-        #more
-        {
-            font-size: 1.1em;
-            margin: 1em 0 0 2.3em;
-        }
-
-        aside
-        {
-            border-radius: 0%;
-            order: -1;
-        }
-
-        aside h2
-        {
-            font-size: 1.4em;
-            justify-content: space-between;
-            margin: 2em 1em 0.5em;
-        }
-
-        #pop
-        {
-            margin-bottom: 1em;
-        }
-
-        #pop figure
-        {
-            width: 330px;
-            margin: 18px;
-        }
-        #pop img
-        {
-            width: 115px;
-            height: 120px;
-        }
-
-        #blue img
-        {
-            width: 115px;
-        }
-
-        #pop figcaption
-        {
-            width: 50%;
-            margin-left: 20px;
-        }
-
-        #pop .star
-        {
-            margin-top: 3.3em;
-            font-size: 0.7rem;
-        }
-
-        #activites h2
-        {
-            font-size: 1.4em;
-            margin: 2em 1em 0.5em;
-        }
-
-
-        .act figure, .act #port
-        {
-            width: 325px;
-            margin: 22px 22px 13px;
-        }
-
-        .act img
-        {
-            width: 100%;
-            object-fit: cover;
-            height: 9em;
-            object-position: top;
-            border-top-left-radius: 1em;
-            border-top-right-radius: 1em;
-        }
-
-        .bloc-small figure
-        {
-            margin-block-end: 10px;
-            margin-block-start: 10px;
-        }
-
-        #iles, #dame
-        {
-            height: 9em;
-            object-position: top;
-        }
-
-        #fort, #parc
-        {
-            height: 9em;
-            object-position: center;
-        }
-
-        .act figcaption
-        {
-            margin: 10px;
-        }
-
-        footer
-        {
-        padding: 0;
-        }
-
-        footer div 
-        {
-            width: 70%;
-            margin:  2em 22px;
-        }
 }
 
 
+@media (min-width: 786px) 
+{    /*loupe*/
+    span.icon {display:none}
+    span.text {display:inline-block}
+}
 
 
-
-@media (min-width: 794px) and (max-width: 1124px)
+@media (min-width: 786px) and (max-width: 1024px)
 {   /*Pour tablettes et Ipads*/
 
 
     *
     {
         box-sizing: border-box;
-    }
-    
-    body
-    {
-        margin: 0;
     }
 
     #bloc-page
@@ -1177,13 +832,12 @@ footer div
 
     header
     {
-        min-width: 900px;
+        min-width: 750px;
+        margin-top: 1em;
     }
 
     #principal
     {
-        display: flex;
-        flex-direction: column;
         padding: 0 1.6em 0 1.6em;
         flex-wrap: wrap;
     }
@@ -1200,15 +854,13 @@ footer div
 
     form input
     {
-        padding: 0.8em 0 0.8em 1.5em;
-        width: 260px;
+        width: 230px;
 
     }
 
     #Filters
     {
         margin: 1.5em 0 0 0;
-        display: flex;
         flex-direction: column;
     }
 
@@ -1250,27 +902,53 @@ footer div
     article 
     {
         width: 60%;
-        min-width: 40%;
-        margin-right: 1em;
+        min-width: 510px;
+        margin-right: 0;
+    }
+
+    article h2
+    {
+        margin-left: 1em;
+    }
+
+    #hebergements
+    {
+        justify-content: space-evenly;
+    }
+
+    #hebergements figure
+    {
+        margin: 1em 0;
+    }
+
+    #more
+    {
+        margin: 2em 0 1em 2em;
     }
 
     aside 
     {
         width: 40%;
-        min-width: 20%;
+        min-width: 287px;
+        background-color: transparent;
+    }
+
+    #pop
+    {
+        align-items: unset;
     }
 
     #pop figure
     {
         width: 89%;
-        margin: 20px;
+        margin: 17px;
     }
 
     #pop figcaption 
     {
         width: 89%;
         min-width: 50px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     #pop img
@@ -1289,9 +967,81 @@ footer div
         margin-top: 1em;
         font-size: 0.8rem;
     }
+
+    .act
+    {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #activites h2
+    {
+        padding: 1em;
+    }
+
+    .act #port, .act figure
+    {
+        width: 220px;
+        margin: 10px;
+
+    }
+
+    .bloc-small
+    {
+        width: 240px;
+        min-width: 200px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #fort 
+    {
+        height: 130px;
+    }
+
+    #iles
+    {
+        height: 110px;
+    }
+
+    #dame
+    {
+        height: 130px;
+    }
+
+    #parc
+    {
+        height: 120px;
+    }
 }
 
-/*@media (min-width: 641px) and (max-width: 1124px)
+@media (min-width: 1025px) and (max-width: 1200px)
 {
-    
-}*/
+
+    article
+    {
+        width: 65%;
+    }
+
+    aside
+    {
+        width: 35%;
+    }
+
+    .act figure
+    {
+        width: 205px;
+    }
+
+    #fort 
+    {
+        height: 130px;
+    }
+
+    #iles, #dame, #parc
+    {
+        height: 110px;
+    }
+
+
+}
