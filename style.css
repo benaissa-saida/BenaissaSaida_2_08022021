@@ -468,12 +468,6 @@ footer div
 /*Mediaqueries*/
 @media screen and (max-width: 448px)
 {
-
-    #bloc-page
-    {
-        min-width: 370px;
-    }
-
     nav ul
     {
         position: relative;
@@ -484,30 +478,11 @@ footer div
         position: absolute;
         bottom: 4em;
         right: 20px;
-
-    }
-
-    #principal
-    {
-        min-width: 350px;
-
-    }
-
-    .map i
-    {
-        text-align: center;
-        font-size: 0.9rem;
-        color: black;
     }
 
     #ico-info
     {
         margin-bottom: 1.5em;
-    }
-
-    #hebergements
-    {
-        display: block;
     }
     
 }
@@ -523,6 +498,7 @@ footer div
     {
         display: block;
         width: 100%;
+        min-width: 370px;
         margin: 0;
     }
 
@@ -587,6 +563,7 @@ footer div
     #principal
     {
         padding: 0 1.6em 0 1.6em;
+        min-height: 350px;
         flex-wrap: wrap;
     }    
 
