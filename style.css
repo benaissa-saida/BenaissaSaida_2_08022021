@@ -250,7 +250,6 @@ a:link, a:visited figure
 {
     text-decoration: none;
     color: black;
-    height: fit-content;
 }
 
 
@@ -406,7 +405,7 @@ aside h2
     margin: 0.7em;
 }
 
-[class*="small"]
+.bloc-small
 {
     width: 300px;
     display: flex;
@@ -414,7 +413,7 @@ aside h2
     justify-content: space-around;
 }
 
-[class*="small"] figure
+.bloc-small figure
 {
     width: 100%;
     margin: auto;
@@ -422,7 +421,7 @@ aside h2
     box-shadow: 0 0 0.3em rgb(0 0 0 / 30%);
 }
 
-[class*="small"] img
+.bloc-small img
 {
     width: 100%;
     object-fit: cover;
@@ -747,6 +746,12 @@ footer div
         border-top-right-radius: 1em;
     }
 
+    .bloc-small figure
+    {
+        margin-block-end: 10px;
+        margin-block-start: 10px;
+    }
+
     #iles, #dame
     {
         height: 9em;
@@ -1021,14 +1026,15 @@ footer div
     {
         display: flex;
         flex-wrap: wrap;
-        justify-content: unset;
+        align-items: baseline;
+        justify-content: flex-start;
     }
 
 
     .act figure, .act #port
     {
         width: 325px;
-        margin: 22px 18px;
+        margin: 22px 22px 13px;
     }
 
     .act img
@@ -1037,33 +1043,38 @@ footer div
         object-position: top;
     }
 
-    [class*="small"]
+    .bloc-small
     {
-        width: 360px;
-        /* margin: 0 13px 0;
-        align-items: center; */
+        width: 340px;
+        margin: 0 13px 0;
+        align-items: center;
     }
 
-    .bloc-small-1
+    .bloc-small figure
     {
-        order: 2;
+        margin: 10px 0;
+
     }
 
-    .bloc-small-2
+    .frioul
     {
-        order: 3;
+
     }
-    
+
+    .notre-dame
+    {
+
+    }
+
+    .longchamp
+    {
+
+    }
 
     #fort, #parc
     {
         height: 9em;
         object-position: center;
-    }
-
-    #iles
-    {
-        height: 9em;
     }
 
     .act figcaption
@@ -1073,12 +1084,12 @@ footer div
 
     footer
     {
-        display: flex;
         padding: 0;
     }
 
     footer div 
     {
+        width: 70%;
         margin:  2em 22px;
     }
 }
@@ -1259,7 +1270,7 @@ footer div
 
     }
 
-    [class*="small"]
+    .bloc-small
     {
         width: 240px;
         min-width: 200px;
