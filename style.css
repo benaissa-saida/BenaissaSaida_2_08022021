@@ -1331,18 +1331,17 @@ footer div
     
     article
     {
-        width: 60vw;
+        width: 55vw;
         margin-right: 3em;
     }
 
     aside
     {
-        width: 30vw;
+        width: 25vw;
     }
 
     footer 
     {
-        justify-content: space-between;
-        padding: 0;
+        padding: 5em;
     }
 }
