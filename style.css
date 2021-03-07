@@ -220,7 +220,8 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
+    max-width: 700px;
     background-color: #F2F2F2;
     margin-right: 2em;
     border-radius: 1.5em;
@@ -290,6 +291,7 @@ aside
     
     background-color: #F2F2F2;
     width: 30%;
+    max-width: 400px;
     min-width: 310px;
     display: flex;
     flex-direction: column;
@@ -353,7 +355,7 @@ aside h2
     color: #0065FC;
 }
 
-.grey-stars
+.grey-stars i
 {
     color: #F2F2F2;
 }
@@ -1324,6 +1326,4 @@ footer div
         height: 110px;
     }
 
-
 }
-
