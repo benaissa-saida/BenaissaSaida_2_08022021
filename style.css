@@ -1328,20 +1328,43 @@ footer div
 
 @media (min-width: 1680px) and (max-width: 1920px)
 {
-    
+    #bloc-herbergements
+    {
+        justify-content: space-between;
+    }
     article
     {
-        width: 55vw;
-        margin-right: 3em;
+        width: 58vw;
+    }
+
+    #hebergements figure 
+    {
+        width: 13vw;
     }
 
     aside
     {
-        width: 25vw;
+        width: 30vw;
+    }
+
+    #pop figure, .act figure
+    {
+        width: 17vw;
+    }
+
+    [class*="small"]
+    {
+        width: 19vw;
     }
 
     footer 
     {
-        padding: 5em;
+        justify-content: space-around;
+        padding-left: 6em;
+    }
+
+    footer div
+    {
+        width: 30vw;
     }
 }
