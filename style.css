@@ -220,7 +220,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 65%;
     background-color: #F2F2F2;
     margin-right: 2em;
     border-radius: 1.5em;
@@ -351,6 +351,11 @@ aside h2
 .star
 {
     color: #0065FC;
+}
+
+.grey-stars
+{
+    color: #F2F2F2;
 }
 
 
